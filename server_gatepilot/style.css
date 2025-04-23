@@ -1,0 +1,81 @@
+@media (max-width: 480px) {
+    html {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input[type="password"] {
+        font-size: 1.2em;
+    }
+}
+
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.login-box {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="password"] {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.error {
+    animation: blink-animation 1s steps(2, start) infinite;
+    color: red;
+    margin-top: 0.5em;
+}
+
+@keyframes blink-animation {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
